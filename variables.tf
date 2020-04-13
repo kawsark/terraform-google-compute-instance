@@ -2,9 +2,15 @@ variable "region" {
   default = "us-east1"
 }
 
-variable "num_servers" {}
-variable "name_prefix" {}
-variable "machine_type" {}
+variable "num_servers" {
+}
+
+variable "name_prefix" {
+}
+
+variable "machine_type" {
+}
+
 variable "user_data" {
   default = ""
 }
@@ -13,10 +19,14 @@ variable "disk_type" {
   default = "pd-ssd"
 }
 
-variable "disk_size" {}
-variable "disk_image" {}
+variable "disk_size" {
+}
 
-variable "subnetwork" {}
+variable "disk_image" {
+}
+
+variable "subnetwork" {
+}
 
 variable "startup_script" {
   default = <<EOF
@@ -28,4 +38,6 @@ cat <<EOF > /var/www/html/index.html
 <p>This page was created from a simple startup script!</p>
 </body></html>
 EOF
+
 }
+

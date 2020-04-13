@@ -1,3 +1,5 @@
+*~
+
 #  Local .terraform directories
 **/.terraform/*
 
@@ -8,5 +10,8 @@
 # .tfvars files
 *.tfvars
 
-# Emacs files
-*~
+# Backend files
+backend.tf
+
+# CA
+ca.crt
