@@ -3,12 +3,14 @@ variable "region" {
 }
 
 variable "num_servers" {
+  default = "1"
 }
 
 variable "name_prefix" {
 }
 
 variable "machine_type" {
+  default = "n1-standard-1"
 }
 
 variable "user_data" {
@@ -20,12 +22,15 @@ variable "disk_type" {
 }
 
 variable "disk_size" {
+  default = "20"
 }
 
 variable "disk_image" {
+  default = "ubuntu-os-cloud/ubuntu-1804-lts"
 }
 
 variable "subnetwork" {
+  default = "default"
 }
 
 variable "startup_script" {
